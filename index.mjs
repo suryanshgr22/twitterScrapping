@@ -4,7 +4,7 @@ import getInfo from './gpt.mjs'
 const cookiesFilePath = 'twitter_cookies.json';
 
 (async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     // Check if cookies exist and load them
