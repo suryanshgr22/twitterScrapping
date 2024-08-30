@@ -57,7 +57,7 @@ import getInfo from './gpt.mjs';
     const results = [];
 
     // Process only the first 3 tweets
-    for (const tweet of tweets.slice(2, 8)) {
+    for (const tweet of tweets.slice(0, 5)) {
         try {
             const analysis = await getInfo(tweet.content);
             // console.log('Analysis:', analysis);
